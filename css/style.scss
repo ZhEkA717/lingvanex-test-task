@@ -9,6 +9,23 @@
     margin: auto;
 }
 
+.button {
+    cursor: pointer;
+    transition: .5s;
+    width: 363px;
+    height: 64px;
+    border: none;
+    background-color: #0146FE;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: Inter;
+    display: block;
+    padding: 20px, 24px, 20px, 24px;
+}
+
 .header {
     width: 100%;
     height: 80px;
@@ -83,7 +100,7 @@
     &__card {
         width: 400px;
         height: 422px;
-        border: 2px;
+        border: 2px solid #0000000A;
         border-radius: 32px;
         box-shadow: 0px 2px 6px 0px #00000014;
         padding-left: 16px;
@@ -115,17 +132,128 @@
     }
 }
 
-.button {
-    width: 363px;
-    height: 64px;
-    border: none;
-    background-color: #0146FE;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: -0.01em;
-    color: #FFFFFF;
-    border-radius: 10px;
-    font-family: Inter;
-    display: block;
-    padding: 20px, 24px, 20px, 24px;
+.product-for {
+    position: relative;
+    margin-top: 214px;
+    margin-left: 151.5px;
+    margin-right: 151.5px;
+    
+    &__label {
+        font-family: Inter;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: -0.05em;
+        text-align: center;
+    }
+
+    &__description {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: -0.01em;
+        text-align: center;    
+        margin-top: 32px;    
+    }
+
+    &__buttons {
+        display: flex;
+        width: fit-content;
+        margin: 64px auto;
+        gap: 16px;
+
+        button {
+            width: 247px;
+            height: 50px;
+            font-family: Inter;
+            letter-spacing: -0.03em;
+            font-size: 18px;
+        }
+
+        button:first-child {
+            width: 167px;
+        }
+    
+        button:last-child {
+            width: 185px;
+        }
+    }
+
+    &__button {
+        position: relative;
+        background-color: #F4F6FD;
+        color: #000000;
+
+        &_active, &:hover {
+            background-color: #0146FE;
+            color: #FFFFFF;
+        }
+    }
+
+    &__cards {
+        margin: 0 auto;
+        margin-top: -32px;
+        margin-left: 2px;
+
+        div:nth-child(2) {
+            position: relative;
+            z-index: -1;
+            margin-top: -383px;
+            transform: scale(0.935);
+        }
+        div:nth-child(3) {
+            position: relative;
+            z-index: -2;
+            transform: scale(0.845);
+            margin-top: -376px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        gap: 163px;
+        padding-top: 40px;
+        padding-left: 48px;
+        padding-right: 29px;
+        padding-bottom: 41px;
+        border: 2px solid #0000000A;
+        border-radius: 32px;
+        box-shadow: 0px 4px 12px 0px #0000001F;
+        background-color: #ffffff;
+    
+        &__label {
+            font-family: Inter;
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 60px;
+            letter-spacing: -0.05em;
+            text-align: left;
+        }
+
+        &__description {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            margin-top: 32px;
+            margin-left: 27px;            
+        }
+
+        &__image {
+            border-radius: 32px 0px 0px 0px;
+        }
+    }
+
+    &__button {
+        margin: 0 auto;
+
+        &_under {
+            margin-top: 32px;
+            background-color: #0146FE;
+            color: #FFFFFF;    
+        }
+    }
 }
