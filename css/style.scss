@@ -29,8 +29,14 @@
 .header {
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid  #E6E7EC;
+    border-top: 1px solid  #E6E7EC;
+    background: #FFFFFF;
+
+    &__logo {
+        margin-left: 135px;
+        margin-top: 22px;
+    }
 }
 
 .main {
@@ -137,7 +143,7 @@
     margin-top: 214px;
     margin-left: 151.5px;
     margin-right: 151.5px;
-    
+
     &__label {
         font-family: Inter;
         font-size: 60px;
@@ -153,8 +159,8 @@
         font-weight: 400;
         line-height: 25.2px;
         letter-spacing: -0.01em;
-        text-align: center;    
-        margin-top: 32px;    
+        text-align: center;
+        margin-top: 32px;
     }
 
     &__buttons {
@@ -174,7 +180,7 @@
         button:first-child {
             width: 167px;
         }
-    
+
         button:last-child {
             width: 185px;
         }
@@ -185,7 +191,8 @@
         background-color: #F4F6FD;
         color: #000000;
 
-        &_active, &:hover {
+        &_active,
+        &:hover {
             background-color: #0146FE;
             color: #FFFFFF;
         }
@@ -195,22 +202,27 @@
         margin: 0 auto;
         margin-top: -32px;
         margin-left: 2px;
+        position: relative;
+        height: 422px;
 
         div:nth-child(2) {
-            position: relative;
-            z-index: -1;
-            margin-top: -383px;
+            z-index: 2;
+            top: 40px;
             transform: scale(0.935);
         }
+
         div:nth-child(3) {
-            position: relative;
-            z-index: -2;
+            top: 80px;
+            z-index: 1;
             transform: scale(0.845);
-            margin-top: -376px;
         }
     }
 
     &__card {
+        transition: .5s;
+        z-index: 3;
+        width: fit-content;
+        height: fit-content;
         display: flex;
         gap: 163px;
         padding-top: 40px;
@@ -221,7 +233,9 @@
         border-radius: 32px;
         box-shadow: 0px 4px 12px 0px #0000001F;
         background-color: #ffffff;
-    
+        position: absolute;
+        top: 0;
+
         &__label {
             font-family: Inter;
             font-size: 60px;
@@ -239,11 +253,11 @@
             letter-spacing: -0.01em;
             text-align: left;
             margin-top: 32px;
-            margin-left: 27px;            
+            margin-left: 27px;
         }
 
         &__image {
-            border-radius: 32px 0px 0px 0px;
+            border-radius: 32px;
         }
     }
 
@@ -251,9 +265,73 @@
         margin: 0 auto;
 
         &_under {
-            margin-top: 32px;
+            margin-top: 120px;
             background-color: #0146FE;
-            color: #FFFFFF;    
+            color: #FFFFFF;
         }
     }
 }
+
+.help {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 64px;
+    padding-bottom: 50px;
+    background-color: #F4F6FD;
+
+    &__label {
+        font-family: Inter;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: -0.05em;
+        text-align: center;
+    }
+
+    &__cards {
+        margin-top: 80px;
+        margin-left: 7px;   
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-left: 253.5px;
+        padding-right: 253.5px;
+    }
+
+    &__card {
+        width: 295px;
+        height: 266px;
+        margin-bottom: 39px;
+
+        &__icon {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__label {
+            margin-top: 28px;
+            font-family: Inter;
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 34px;
+            letter-spacing: -0.03em;
+            text-align: center;
+        }
+
+        &__description {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #7A869C;
+            margin-top: 13px;
+        }
+    }
+
+    &__button {
+        margin: 22px auto;
+    }
+}
+

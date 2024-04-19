@@ -15,7 +15,9 @@
 
 <body>
     <header class="header">
-        <div class="container"></div>
+        <div class="container">
+            <img class="header__logo" src="./assests/icons/logo.svg" alt="logo">
+        </div>
     </header>
     <main class="main">
         <div class="container">
@@ -55,53 +57,118 @@
             </section>
             <section class="product-for">
                 <div class="product-for__label">Who is this product for?</div>
-                <div class="product-for__description">Lingvanex Bot can simply solve a language barrier problem in your team,
-                    community,<br>with your international clients and outsourcing partners. It automatically identifies the languages<br>
+                <div class="product-for__description">Lingvanex Bot can simply solve a language barrier problem in your
+                    team,
+                    community,<br>with your international clients and outsourcing partners. It automatically identifies
+                    the languages<br>
                     in a conversation and translates all messages of your team members into a chosen language.</div>
                 <div class="product-for__buttons">
-                    <button class="product-for__button  product-for__button_active button">For travelers</button>
-                    <button class="product-for__button  button">For travel organization</button>
-                    <button class="product-for__button  button">For employees</button>
+                    <button id="0" class="product-for__button  product-for__button_active button">For travelers</button>
+                    <button id="1" class="product-for__button  button">For travel organization</button>
+                    <button id="2" class="product-for__button  button">For employees</button>
                 </div>
                 <div class="product-for__cards">
-                    <div class="product-for__card">
+                    <div class="product-for__card one">
                         <div class="wrapper">
                             <div class="product-for__card__label">For travelers</div>
                             <ul class="product-for__card__description">
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                             </ul>
                         </div>
-                        <img src="./assests/images/for-travelers.png" alt="for-travelers" class="product-for__card__image">
+                        <img src="./assests/images/for-travelers.png" alt="for-travelers"
+                            class="product-for__card__image">
                     </div>
-                    <div class="product-for__card">
+                    <div class="product-for__card two">
                         <div class="wrapper">
-                            <div class="product-for__card__label">For travelers</div>
+                            <div class="product-for__card__label">For travel organization</div>
                             <ul class="product-for__card__description">
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                             </ul>
                         </div>
-                        <img src="./assests/images/for-travelers.png" alt="for-travelers" class="product-for__card__image">
+                        <img src="./assests/images/for-organization.png" alt="for-organization"
+                            class="product-for__card__image">
                     </div>
-                    <div class="product-for__card">
+                    <div class="product-for__card three">
                         <div class="wrapper">
-                            <div class="product-for__card__label">For travelers</div>
+                            <div class="product-for__card__label">For employees</div>
                             <ul class="product-for__card__description">
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                                 <li>Highlight one word in the text on the page.</li>
-                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms  . and more.</li>
+                                <li>Word meaning, pronunciation, synonyms,<br>hypernyms, hyponyms . and more.</li>
                             </ul>
                         </div>
-                        <img src="./assests/images/for-travelers.png" alt="for-travelers" class="product-for__card__image">
+                        <img src="./assests/images/for-employees.png" alt="for-employees"
+                            class="product-for__card__image">
                     </div>
                 </div>
                 <button class="product-for__button product-for__button_under button">Request a free trial</button>
+            </section>
+            <section class="help">
+                <div class="help__label">How can Lingvanex help you?</div>
+                <div class="help__cards">
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/triangle.svg" alt="triangle">
+                        <div class="help__card__label">Book trips & tickets easily</div>
+                        <div class="help__card__description">We provide cloud, sdk<br>
+                            and on-premise translation<br>solutions. All your private data<br>stays with you.</div>
+                    </div>
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/square.svg" alt="square">
+                        <div class="help__card__label">Translate in real time</div>
+                        <div class="help__card__description">
+                            The price starts from<br>
+                            $100 / month and depends<br> 
+                            on number of languages.<br>
+                        </div>
+                    </div>
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/circle.svg" alt="circle">
+                        <div class="help__card__label">
+                            Translate any hotel services
+                        </div>
+                        <div class="help__card__description">
+                            Every language model size<br>
+                            is 70mb.SDK uses 200mb<br> 
+                            of RAM memory.<br>
+                        </div>
+                    </div>
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/square.svg" alt="square">
+                        <div class="help__card__label">Сommunicate easily</div>
+                        <div class="help__card__description">
+                            We provide cloud, sdk<br>
+                            and on-premise translation<br>
+                            solutions. All your private data<br>
+                            stays with you.
+                        </div>
+                    </div>
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/reverse-triangle.svg" alt="reverse-triangle">
+                        <div class="help__card__label">Knowledge bases for employees</div>
+                        <div class="help__card__description">
+                            The price starts from<br>
+                            $100 / month and depends<br> 
+                            on number of languages.<br>
+                        </div>
+                    </div>
+                    <div class="help__card">
+                        <img class="help__card__icon" src="./assests/icons/rhomb.svg" alt="rhomb">
+                        <div class="help__card__label">Website  & promo translation</div>
+                        <div class="help__card__description">
+                            SDK has trial project and<br>
+                            manual.Dependency managers<br>
+                            are supported.
+                        </div>
+                    </div>
+                </div>
+                <button class="help__button help__button_under button">Request a free trial</button>
             </section>
         </div>
     </main>
